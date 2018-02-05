@@ -11,7 +11,7 @@
                type="xml">
             <xpath expr="//field[@name='name']"
                    position="after">
-                <t t-if="record.description.raw_value">
+                <t t-if="record.description.value">
                     <a t-attf-href="/web#id={{record.id.value}}&amp;view_type=form&amp;model=project.task">
                         <i class='fa fa-external-link-square'/>
                     </a>
