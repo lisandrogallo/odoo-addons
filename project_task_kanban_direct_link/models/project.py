@@ -9,6 +9,6 @@ class Task(models.Model):
 
     @api.multi
     @api.onchange('description')
-    def _onchange_document_object(self):
+    def _onchange_description(self):
         if self.description == u'<p><br></p>':
             self.description = ''
